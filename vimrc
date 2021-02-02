@@ -1,0 +1,58 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+    " Add plugin here.
+    Plugin 'gmarik/Vundle.vim'
+    Plugin 'tmhedberg/SimpylFold'
+    Plugin 'matze/vim-move'
+call vundle#end()
+filetype plugin indent on
+
+syntax on
+colorscheme custom
+set number
+set smartindent
+set autoindent
+set ruler
+set mouse=a
+set showmatch
+set smarttab
+set colorcolumn=80
+highlight ColorColumn ctermfg=red
+set expandtab shiftwidth=4 softtabstop=4
+" Enable folding.
+set foldmethod=indent
+set foldlevel=2
+set foldnestmax=2
+nnoremap <space> za
+
+" Settings for Makefile.
+autocmd FileType make 
+    \ set noexpandtab
+    \ set shiftwidth=8
+    \ set softtabstop=0
+
+" Settings for Python.
+autocmd FileType *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" Make Vim recognizes <Alt> key.
+function! s:alt_key_vim()
+    let c='a'
+    while c <= 'z'
+      exec "set <A-".c.">=\e".c
+      exec "imap \e".c." <A-".c.">"
+      let c = nr2char(1+char2nr(c))
+    endw
+    set timeout ttimeoutlen=50
+endfunction
+
+call s:alt_key_vim()

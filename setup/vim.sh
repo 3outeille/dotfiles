@@ -4,7 +4,10 @@
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Link vimrc
-ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/vim/vimrc ~/.vimrc
+# Load custome color scheme.
+mkdir -p ~/.vim/colors
+cp ~/dotfiles/vim/custom-scheme.vim ~/.vim/colors/custom-scheme.vim
 
 # Install all plugins
 vim +PluginInstall +qall

@@ -11,7 +11,7 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-colorscheme custom
+colorscheme custom-scheme
 set number
 set smartindent
 set autoindent

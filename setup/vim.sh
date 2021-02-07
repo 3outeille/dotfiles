@@ -1,10 +1,14 @@
 #!/bin/sh
 
-# Install Vundle package manager for vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d "$HOME/.vim/bundle" ]
+then
+    # Install Vundle package manager for vim
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 
 # Link vimrc
 cp ~/dotfiles/vim/vimrc ~/.vimrc
+
 # Load custome color scheme.
 mkdir -p ~/.vim/colors
 cp ~/dotfiles/vim/custom-scheme.vim ~/.vim/colors/custom-scheme.vim

@@ -5,6 +5,9 @@ export OSH=/home/sphird/.oh-my-bash
 # it'll load a random theme each time that oh-my-bash is loaded.
 OSH_THEME="brainy"
 
+THEME_SHOW_PYTHON=true
+THEME_SHOW_CLOCK=true
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -100,3 +103,44 @@ source $OSH/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
+
+#-----------------------------MANUALLY ADD-------------------------------------
+# Man pages colorized.
+export PAGER="most"
+
+#Languages
+export LANGUAGE="fr"
+export LANG="fr_FR.UTF-8"
+export LC_MESSAGES="fr_FR.UTF-8"
+
+#Matlab path
+export PATH="$PATH:/home/sphird/Downloads/matlab/bin"
+
+#Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
+#rm -> move to trash instead of removing completly.
+alias mr="gio trash"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/sphird/Downloads/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/sphird/Downloads/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/sphird/Downloads/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/sphird/Downloads/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Alacritty
+source "$HOME/.cargo/env"
+source /home/sphird/Downloads/alacritty/extra/completions/alacritty.bash
+
+# Python default version.
+alias python='/usr/bin/python3.6'

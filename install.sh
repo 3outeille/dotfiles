@@ -1,1 +1,1 @@
-bash setups/vim.sh
+bash setup/vim.sh

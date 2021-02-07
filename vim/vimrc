@@ -7,11 +7,13 @@ call vundle#begin()
     Plugin 'gmarik/Vundle.vim'
     Plugin 'tmhedberg/SimpylFold'
     Plugin 'matze/vim-move'
+    Plugin 'puremourning/vimspector'
 call vundle#end()
 filetype plugin indent on
 
 syntax on
-colorscheme custom-scheme
+colorscheme custom 
+set relativenumber
 set number
 set smartindent
 set autoindent

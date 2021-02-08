@@ -23,5 +23,13 @@ sed -i "226,236s/'h'/'left'/g" ~/.vim/bundle/vim-move/plugin/move.vim
 sed -i "226,236s/'l'/'right'/g" ~/.vim/bundle/vim-move/plugin/move.vim
 
 # Install gadget for vimspector
+if [ ! -d "$HOME/.config/vimspector/configurations/linux/_all" ]
+then
+    mkdir -p "$HOME/.config/vimspector/configurations/linux/_all" 
+fi
+
+cp ~/dotfiles/config/vimspector/configurations/linux/_all/vimspector.json ~/.config/vimspector/configurations/linux/_all/vimspector.json 
+
 cd ~/.vim/bundle/vimspector/
 ./install_gadget.py --enable-ptyhon
+cd ~

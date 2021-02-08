@@ -12,7 +12,7 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-colorscheme custom 
+colorscheme custom-scheme
 set relativenumber
 set number
 set smartindent

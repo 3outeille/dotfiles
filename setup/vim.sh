@@ -21,3 +21,7 @@ sed -i "226,236s/'j'/'down'/g" ~/.vim/bundle/vim-move/plugin/move.vim
 sed -i "226,236s/'k'/'up'/g" ~/.vim/bundle/vim-move/plugin/move.vim
 sed -i "226,236s/'h'/'left'/g" ~/.vim/bundle/vim-move/plugin/move.vim
 sed -i "226,236s/'l'/'right'/g" ~/.vim/bundle/vim-move/plugin/move.vim
+
+# Install gadget for vimspector
+cd ~/.vim/bundle/vimspector/
+./install_gadget.py --enable-ptyhon

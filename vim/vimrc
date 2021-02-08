@@ -58,3 +58,14 @@ function! s:alt_key_vim()
 endfunction
 
 call s:alt_key_vim()
+
+" Vimspector
+let g:vimspector_enable_mappings = 'HUMAN'"
+" Make config global.
+let g:vimspector_base_dir = expand('$HOME/.config/vimspector')
+" <leader> = key '\'
+nmap <leader>dd :call vimspector#Launch()<CR>
+nmap <leader>dx :VimspectorReset<CR>
+nmap <leader>de :VimspectorEval
+nmap <leader>dw :VimspectorWatch
+nmap <leader>do :VimspectorShowOutput

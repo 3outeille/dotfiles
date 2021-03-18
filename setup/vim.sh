@@ -1,5 +1,3 @@
-#!/bin/sh
-
 if [ ! -d "$HOME/.vim/bundle" ]
 then
     # Install Vundle package manager for vim
@@ -7,7 +5,7 @@ then
 fi
 
 # Link vimrc
-cp ~/dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 
 # Load custome color scheme.
 mkdir -p ~/.vim/colors

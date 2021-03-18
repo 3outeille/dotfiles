@@ -2,4 +2,4 @@
 sudo apt-get purge vim
 
 rm $HOME/.vimrc
-rm $HOME/.vim
+rm -rf $HOME/.vim

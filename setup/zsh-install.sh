@@ -9,7 +9,7 @@ cp -r ~/dotfiles/zsh ~/.zsh
 
 # Install theme
 mkdir ~/.zsh/themes 
-bash ~/.zsh/themes.sh
+. ~/dotfiles/zsh/themes.sh
 
 # Change shell to zsh
 chsh -s $(which zsh)

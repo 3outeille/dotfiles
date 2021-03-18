@@ -1,7 +1,7 @@
 # Set up the prompt
 
 # Zsh Theme
-fpath+=$HOME/.zsh/pure
+fpath+=$HOME/.zsh/themes/pure
 
 autoload -Uz promptinit
 promptinit

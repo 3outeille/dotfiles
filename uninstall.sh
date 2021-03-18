@@ -6,6 +6,9 @@ chsh -s $(which bash)
 . setup/vim-uninstall.sh
 echo "[vim]: Uninstall done."
 
+. setup/git-uninstall.sh
+echo "[git]: Uninstall done."
+
 . setup/zsh-uninstall.sh
 echo "[zsh]: Uninstall done."
 

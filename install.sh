@@ -6,7 +6,10 @@ sudo apt update
 . setup/vim-install.sh
 echo "[vim]: Install done."
 
-# Restart computer for zsh to be use as default shell.
+. setup/git-install.sh
+echo "[git]: Install done."
+
 . setup/zsh-install.sh
 echo "[zsh]: Install done."
+
 echo -e "${MAGENTA}LOG: You should restart computer for zsh to be set as default shell${NC}"

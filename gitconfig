@@ -1,0 +1,16 @@
+[user]
+    email = ferdinand.mom@epita.fr
+    name = Ferdinand Mom
+[ferdinand]
+    mom = ferdinand.mom
+[ferdinand "mom@epita"]
+    fr = ferdinand.mom@epita.fr
+[color]
+    ui = auto
+[core]
+    editor = vim
+[alias]
+    tree = log --graph --decorate --abbrev-commit --pretty=oneline
+
+[credential]
+    helper = cache

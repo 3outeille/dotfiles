@@ -3,7 +3,7 @@ sudo apt install zsh
 
 # Link zsh
 rm ~/.zshrc
-ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
+ln -s ~/dotfiles/zshrc ~/.zshrc
 
 cp -r ~/dotfiles/zsh ~/.zsh
 

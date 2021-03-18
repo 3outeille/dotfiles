@@ -12,8 +12,6 @@ setopt histignorealldups sharehistory
 # Keyboard bindings
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
-bindkey '\CI' expand-or-complete-prefix # completion filename
-
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000

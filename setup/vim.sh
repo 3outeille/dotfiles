@@ -1,3 +1,6 @@
+# Install vim.
+sudo apt install vim
+
 if [ ! -d "$HOME/.vim/bundle" ]
 then
     # Install Vundle package manager for vim
@@ -5,6 +8,7 @@ then
 fi
 
 # Link vimrc
+rm ~/.vimrc
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 
 # Load custome color scheme.

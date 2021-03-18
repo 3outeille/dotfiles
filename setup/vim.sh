@@ -1,6 +1,3 @@
-# Install vim
-sudo apt install vim
-
 if [ ! -d "$HOME/.vim/bundle" ]
 then
     # Install Vundle package manager for vim

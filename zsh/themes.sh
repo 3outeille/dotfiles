@@ -1,2 +1,2 @@
 # Install themes.
-git clone https://github.com/sindresorhus/pure.git "~/.zsh/themes/pure"
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/themes/pure"

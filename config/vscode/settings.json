@@ -1,0 +1,17 @@
+{
+    "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+    "python.linting.enabled": false,
+    "python.pythonPath": "/usr/bin/python3",
+    "workbench.colorTheme": "Andromeda Bordered",
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "jupyter.askForKernelRestart": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "editor.largeFileOptimizations": false,
+    "extensions.confirmedUriHandlerExtensionIds": [
+    "vim.vimrc.enable": true
+    ]
+}

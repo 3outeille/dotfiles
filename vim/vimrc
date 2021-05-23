@@ -4,6 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
     " Add plugin here.
+    Plugin 'glepnir/oceanic-material'
     Plugin 'gmarik/Vundle.vim'
     Plugin 'tmhedberg/SimpylFold'
     Plugin 'matze/vim-move'
@@ -14,7 +15,7 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-colorscheme custom-scheme
+"colorscheme custom-scheme
 set relativenumber
 set number
 set smartindent
@@ -60,3 +61,7 @@ function! s:alt_key_vim()
 endfunction
 
 call s:alt_key_vim()
+
+" Experiment
+set background=dark
+colorscheme oceanic_material

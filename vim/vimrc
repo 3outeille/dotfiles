@@ -116,8 +116,10 @@ call s:alt_key_vim()
 "#       THEME
 "#######################
 
-" Experiment
 set background=dark
-let g:oceanic_material_background="medium"
+let g:oceanic_material_background="darker"
 colorscheme oceanic_material
 " colorscheme custome-scheme
+
+" Vim-airline theme
+let g:airline_theme="minimalist"

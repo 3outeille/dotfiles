@@ -118,5 +118,6 @@ call s:alt_key_vim()
 
 " Experiment
 set background=dark
+let g:oceanic_material_background="medium"
 colorscheme oceanic_material
 " colorscheme custome-scheme

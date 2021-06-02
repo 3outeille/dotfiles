@@ -8,7 +8,7 @@ then
 fi
 
 # Link vimrc
-rm $HOME/vimrc
+rm $HOME/.vimrc
 ln -s $HOME/dotfiles/vim/vimrc $HOME/.vimrc
 
 # Install all plugins

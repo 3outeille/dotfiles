@@ -59,7 +59,7 @@ set number
 " Enables syntax highlighting
 syntax on
 
-set relativenumber
+" set relativenumber
 " Display current line & column at the bottom right of screen
 set ruler
 
@@ -80,7 +80,7 @@ set softtabstop=4
 "#######################
 
 " Settings for Makefile.
-autocmd FileType make 
+autocmd FileType Makefile
     \ set noexpandtab
     \ set shiftwidth=8
     \ set softtabstop=0
@@ -116,7 +116,7 @@ call s:alt_key_vim()
 "#       THEME
 "#######################
 
-set background=dark
+"set background=dark
 let g:oceanic_material_background="darker"
 colorscheme oceanic_material
 " colorscheme custome-scheme

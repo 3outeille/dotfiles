@@ -12,4 +12,7 @@ echo "[git]: Uninstall done."
 . setup/zsh-uninstall.sh
 echo "[zsh]: Uninstall done."
 
+. setup/tmux-uninstall.sh
+echo "[tmux]: Uninstall done."
+
 echo -e "${MAGENTA}LOG: set bash as default shell. You should restart computer for changes to take effect.${NC}"
